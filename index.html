@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Jatin Kumar, a 14-year-old coder and AI/ML developer specializing in Python, Scikit-Learn, and prompt engineering.">
+  <title>Jatin Kumar | Student, Coder & AI Enthusiast</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background grid and ambient orbs -->
+  <div class="bg-grid"></div>
+  <div class="glow-orb glow-cyan"></div>
+  <div class="glow-orb glow-emerald"></div>
+  <div class="glow-orb glow-violet"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <span>&lt;Jatin</span><span class="logo-dot">.</span><span>dev&gt;</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#ml-model">ML Model</a></li>
+          <li><a href="#projects">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="hero">
+    <div class="container hero-content">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <i class="fa-solid fa-code-branch"></i>
+          <span>14-Year-Old Developer &amp; Student</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Jatin Kumar</span>. I build intelligent code.
+        </h1>
+        <p class="hero-desc">
+          I'm a self-taught programmer currently studying in school, focused on bridging the gap between classical coding and artificial intelligence. I build Python scripts, ML predictions, and clean interfaces.
+        </p>
+        <div class="hero-buttons">
+          <a href="#ml-model" class="btn btn-primary" id="hero-btn-primary">
+            Explore ML Simulator <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#projects" class="btn btn-secondary" id="hero-btn-secondary">
+            Play Console Games
+          </a>
+          <button class="btn btn-resume" id="hero-btn-resume" aria-label="Open Resume Popup">
+            <i class="fa-solid fa-file-lines"></i> View Resume
+          </button>
+        </div>
+        <div class="hero-socials">
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">// CONNECT:</span>
+          <a href="https://github.com/Jatin-Kumar-ai" target="_blank" rel="noopener" class="social-link" id="hero-social-github" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/jatin.dev123/" target="_blank" rel="noopener" class="social-link" id="hero-social-instagram" title="Instagram Profile">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="mailto:jatin.coder123@gmail.com" class="social-link" id="hero-social-gmail" title="Email Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-right">
+        <!-- Interactive Terminal Simulator -->
+        <div class="terminal-mockup" id="hero-terminal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="terminal-btn terminal-close"></span>
+              <span class="terminal-btn terminal-minimize"></span>
+              <span class="terminal-btn terminal-maximize"></span>
+            </div>
+            <span class="terminal-title">jatin_profile.py</span>
+          </div>
+          <div class="terminal-body" id="hero-terminal-body">
+            <!-- Content will type out here via Javascript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-left">
+        <span class="section-tag">// 01. ORIGIN STORY</span>
+        <h2 class="section-title">A Bit About Me</h2>
+        <p class="about-text">
+          I started programming when I was 12, discovering Python and immediately falling in love with how logic can create something out of nothing. What began as simple text-based loops and scripts evolved into a deep fascination with statistics and AI models.
+        </p>
+        <div class="about-highlight">
+          "Age is just a number. It's the complexity of the problems you choose to solve that defines you."
+        </div>
+        <p class="about-text">
+          When I'm not studying at school, I spend my time exploring datasets, training ML algorithms, and writing code. My goal is to build software that doesn't just run instructions, but dynamically learns and predicts.
+        </p>
+      </div>
+      
+      <div class="about-right">
+        <!-- Profile Card Visual -->
+        <div class="profile-card" id="about-profile-card">
+          <div class="profile-avatar-container">
+            <div class="profile-avatar-inner">
+               <img src="Img.jpeg" alt="Jatin Kumar">
+            </div>
+          </div>
+          <h3 class="profile-name">Jatin Kumar</h3>
+          <p class="profile-title">@Jatin-Kumar-ai</p>
+          <div class="profile-stats">
+            <div class="stat-item">
+              <span class="stat-val">3+</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">5+</span>
+              <span class="stat-label">ML Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <span class="section-tag">// 02. EXPERIENCE</span>
+      <h2 class="section-title">My Tech Stack</h2>
+      <p class="section-subtitle">A breakdown of my technical capabilities, ranging from core front-end languages to scientific data analytics tools.</p>
+      
+      <div class="skills-grid">
+        <!-- Core Coding Skills -->
+        <div class="skills-card coding" id="skills-coding-card">
+          <h3><i class="fa-solid fa-code"></i> Core Coding</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python (OOP, Scripting, CLI)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-percent="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5 (Semantic Web Layouts)</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-percent="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CSS3 (Flexbox, Grid, Animations)</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-percent="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI and ML Skills -->
+        <div class="skills-card ai" id="skills-ai-card">
+          <h3><i class="fa-solid fa-brain"></i> AI &amp; Machine Learning</h3>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Pandas &amp; NumPy (Data Cleaning &amp; Arrays)</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-percent="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Scikit-Learn (Linear Regression &amp; Models)</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-percent="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Prompt Engineering (LLM Architecture &amp; System Prompts)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-percent="90"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE ML SHOWCASE SECTION
+       ========================================================================== -->
+  <section id="ml-model">
+    <div class="container ml-grid">
+      <!-- ML Details Info -->
+      <div class="ml-info-card" id="ml-info-card">
+        <span class="section-tag">// 03. SPECIAL SHOWCASE</span>
+        <h2 class="section-title">House Price Prediction Model</h2>
+        <p class="about-text">
+          Linear Regression is often the gateway into the predictive capability of artificial intelligence. In this project, I used real-world real estate datasets to build a machine learning model that forecasts housing valuations.
+        </p>
+        <p class="about-text">
+          First, I used <strong>Pandas</strong> to clean columns and handle missing data points, and <strong>NumPy</strong> to perform fast vector operations. Using <strong>Scikit-Learn</strong>, I fit a multi-variable Linear Regression model, calculating optimal weights for space square footage, bedroom density, and location tier indices.
+        </p>
+        <p class="about-text">
+          You can also visit my <a href="https://github.com/Jatin-Kumar-ai" target="_blank" rel="noopener" class="github-link">GitHub Profile <i class="fa-solid fa-up-right-from-square" style="font-size: 0.8rem;"></i></a> to see more machine learning projects and full source codes.
+        </p>
+        
+        <!-- Embedded Python Code Snippet -->
+        <div class="code-container">
+          <div class="code-header">
+            <span><i class="fa-brands fa-python" style="color: #34d399; margin-right: 6px;"></i> house_project.py</span>
+            <span>Python 3.x</span>
+          </div>
+          <div class="code-body"><span class="code-kw">import</span> pandas <span class="code-kw">as</span> pd
+<span class="code-kw">import</span> numpy <span class="code-kw">as</span> np
+<span class="code-kw">import</span> sklearn.preprocessing <span class="code-kw">as</span> sp
+<span class="code-kw">from</span> sklearn.model_selection <span class="code-kw">import</span> train_test_split
+<span class="code-kw">from</span> sklearn.linear_model <span class="code-kw">import</span> LinearRegression
+
+<span class="code-kw">def</span> <span class="code-fn">train_model</span>():
+    <span class="code-cmt"># Load dataset</span>
+    df = pd.<span class="code-fn">read_csv</span>(<span class="code-str">"Housing.csv"</span>)
+    cleaned_df = df.<span class="code-fn">copy</span>().<span class="code-fn">dropna</span>()
+
+    <span class="code-cmt"># Encode Categoricals (OneHotEncoder)</span>
+    encoder = sp.<span class="code-fn">OneHotEncoder</span>(sparse_output=<span class="code-kw">False</span>)
+    cat_cols = cleaned_df.<span class="code-fn">select_dtypes</span>(include=[<span class="code-str">"object"</span>]).columns
+    encoded_cat = encoder.<span class="code-fn">fit_transform</span>(cleaned_df[cat_cols])
+    encoded_cat_df = pd.<span class="code-fn">DataFrame</span>(encoded_cat, columns=encoder.<span class="code-fn">get_feature_names_out</span>(cat_cols))
+    
+    final_df = pd.<span class="code-fn">concat</span>([cleaned_df.<span class="code-fn">drop</span>(cat_cols, axis=<span class="code-num">1</span>).<span class="code-fn">reset_index</span>(drop=<span class="code-kw">True</span>), encoded_cat_df], axis=<span class="code-num">1</span>)
+
+    <span class="code-cmt"># Scaling numeric columns</span>
+    int_cols = final_df.<span class="code-fn">select_dtypes</span>(include=[<span class="code-str">"int64"</span>, <span class="code-str">"float64"</span>]).columns.<span class="code-fn">drop</span>(<span class="code-str">"price"</span>)
+    scaler = sp.<span class="code-fn">MinMaxScaler</span>()
+    final_df[int_cols] = scaler.<span class="code-fn">fit_transform</span>(final_df[int_cols])
+
+    price_scaler = sp.<span class="code-fn">MinMaxScaler</span>()
+    final_df[<span class="code-str">"price"</span>] = price_scaler.<span class="code-fn">fit_transform</span>(final_df[[<span class="code-str">"price"</span>]])
+
+    <span class="code-cmt"># Split Data and Train</span>
+    X = final_df.<span class="code-fn">drop</span>(<span class="code-str">"price"</span>, axis=<span class="code-num">1</span>)
+    y = final_df[<span class="code-str">"price"</span>]
+    X_train, X_test, y_train, y_test = <span class="code-fn">train_test_split</span>(X, y, test_size=<span class="code-num">0.2</span>, random_state=<span class="code-num">42</span>)
+
+    model = <span class="code-fn">LinearRegression</span>()
+    model.<span class="code-fn">fit</span>(X_train, y_train)
+    <span class="code-kw">return</span> model, encoder, scaler, price_scaler
+
+<span class="code-kw">def</span> <span class="code-fn">predict_price</span>(details, model, encoder, scaler, price_scaler, cat_cols, int_cols, feature_columns):
+    input_df = pd.<span class="code-fn">DataFrame</span>([details])
+    encoded_cat = encoder.<span class="code-fn">transform</span>(input_df[cat_cols])
+    encoded_cat_df = pd.<span class="code-fn">DataFrame</span>(encoded_cat, columns=encoder.<span class="code-fn">get_feature_names_out</span>(cat_cols))
+    input_final = pd.<span class="code-fn">concat</span>([input_df.<span class="code-fn">drop</span>(cat_cols, axis=<span class="code-num">1</span>).<span class="code-fn">reset_index</span>(drop=<span class="code-kw">True</span>), encoded_cat_df], axis=<span class="code-num">1</span>)
+    
+    cols_to_scale = [c <span class="code-kw">for</span> c <span class="code-kw">in</span> int_cols <span class="code-kw">if</span> c <span class="code-kw">in</span> input_final.columns]
+    input_final[cols_to_scale] = scaler.<span class="code-fn">transform</span>(input_final[cols_to_scale])
+    input_final = input_final.<span class="code-fn">reindex</span>(columns=feature_columns, fill_value=<span class="code-num">0</span>)
+    
+    scaled_pred = model.<span class="code-fn">predict</span>(input_final)
+    price_pred = price_scaler.<span class="code-fn">inverse_transform</span>(scaled_pred.<span class="code-fn">reshape</span>(-<span class="code-num">1</span>, <span class="code-num">1</span>))[<span class="code-num">0</span>][<span class="code-num">0</span>]
+    <span class="code-kw">return</span> price_pred</div>
+        </div>
+
+        <div class="ml-tech-stack" style="margin-top: 1.5rem;">
+          <span class="tech-tag highlight">Python</span>
+          <span class="tech-tag highlight">Pandas</span>
+          <span class="tech-tag highlight">NumPy</span>
+          <span class="tech-tag highlight">Scikit-Learn</span>
+          <span class="tech-tag">Linear Regression</span>
+        </div>
+      </div>
+
+      <!-- Live Simulator Tool -->
+      <div class="predictor-widget" id="predictor-widget">
+        <div class="predictor-header">
+          <h3>ML Model Live Simulator</h3>
+          <p>Adjust inputs below to simulate Jatin's trained regression parameters in real-time.</p>
+        </div>
+
+        <div class="predictor-controls">
+          <!-- Area Slider -->
+          <div class="control-group">
+            <div class="control-label-row">
+              <span>Square Footage (Area)</span>
+              <span id="area-val" class="control-val">1,500 sq ft</span>
+            </div>
+            <input type="range" id="area" min="500" max="5000" step="50" value="1500" class="predictor-slider" aria-label="Square Footage Slider">
+          </div>
+
+          <!-- Bedrooms Slider -->
+          <div class="control-group">
+            <div class="control-label-row">
+              <span>Bedrooms</span>
+              <span id="bedrooms-val" class="control-val">3</span>
+            </div>
+            <input type="range" id="bedrooms" min="1" max="5" step="1" value="3" class="predictor-slider" aria-label="Bedrooms Slider">
+          </div>
+
+          <!-- Location Slider -->
+          <div class="control-group">
+            <div class="control-label-row">
+              <span>Location Tier</span>
+              <span id="location-val" class="control-val">Urban Center (Standard)</span>
+            </div>
+            <input type="range" id="location" min="1" max="5" step="1" value="3" class="predictor-slider" aria-label="Location Slider">
+          </div>
+        </div>
+
+        <!-- Output Banner -->
+        <div class="prediction-box">
+          <span class="prediction-label">Predicted Valuation</span>
+          <div class="prediction-value-wrap">
+            <span id="price-display" class="prediction-value">$339,000</span>
+          </div>
+        </div>
+
+        <!-- Live SVG Regression Plot Visualizer -->
+        <div class="regression-chart-box">
+          <div class="chart-header">
+            <span>Regression Line Plot</span>
+            <span>X = Area (sq ft) / Y = Price</span>
+          </div>
+          <div class="chart-visual">
+            <svg class="chart-line" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <!-- Plot some sample static training dots -->
+              <circle cx="10" cy="85" r="1.5" fill="#64748b" opacity="0.5" />
+              <circle cx="20" cy="70" r="1.5" fill="#64748b" opacity="0.6" />
+              <circle cx="35" cy="65" r="1.5" fill="#64748b" opacity="0.5" />
+              <circle cx="50" cy="45" r="1.5" fill="#64748b" opacity="0.5" />
+              <circle cx="65" cy="35" r="1.5" fill="#64748b" opacity="0.7" />
+              <circle cx="85" cy="15" r="1.5" fill="#64748b" opacity="0.4" />
+              <!-- Fitted Regression Line -->
+              <line x1="0" y1="90" x2="100" y2="10" stroke="var(--accent-emerald)" stroke-width="0.85" stroke-dasharray="2 1" />
+            </svg>
+            <!-- Glowing prediction coordinate dot -->
+            <div id="chart-dot" class="chart-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECONDARY PROJECTS & CONSOLE GAMES
+       ========================================================================== -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-intro">
+        <span class="section-tag">// 04. OTHER PROJECTS</span>
+        <h2 class="section-title">Playable Python Console Games</h2>
+        <p class="section-subtitle">I converted my console-based Python scripts into web terminal ports. You can click "Run" to play them inside the interactive browser terminal below!</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Number Guessing Game Card -->
+        <div class="project-card" id="project-number-card">
+          <div class="project-header-row">
+            <div class="project-icon">
+              <i class="fa-solid fa-hashtag"></i>
+            </div>
+            <div class="project-links">
+              <button class="btn-run-game" id="btn-run-number">
+                <i class="fa-solid fa-play"></i> Run Game
+              </button>
+            </div>
+          </div>
+          <h3 class="project-title">Number Guessing Game</h3>
+          <p class="project-desc">
+            A logic game where the program computes a random number in your custom range. Using binary search principles, players attempt to find the number in 7 attempts or less.
+          </p>
+          
+          <!-- Terminal Widget -->
+          <div class="terminal-interactive">
+            <div class="terminal-interactive-header">
+              <span class="terminal-status" id="term-number-status">idle</span>
+              <span class="terminal-title">number_guess.py</span>
+            </div>
+            <div class="terminal-console-body" id="term-number-console">
+              <div class="terminal-comment"># Click "Run Game" above to launch terminal emulator.</div>
+            </div>
+            <div class="terminal-input-row">
+              <span class="terminal-input-prompt">&gt;</span>
+              <input type="text" id="term-number-input" class="terminal-input-field" disabled placeholder="Terminal waiting..." aria-label="Number game input">
+            </div>
+          </div>
+        </div>
+
+        <!-- Word Guessing Game Card -->
+        <div class="project-card" id="project-word-card">
+          <div class="project-header-row">
+            <div class="project-icon">
+              <i class="fa-solid fa-spell-check"></i>
+            </div>
+            <div class="project-links">
+              <button class="btn-run-game" id="btn-run-word">
+                <i class="fa-solid fa-play"></i> Run Game
+              </button>
+            </div>
+          </div>
+          <h3 class="project-title">Word Guessing Game</h3>
+          <p class="project-desc">
+            An alphabetical character guesser built on string searching. Players are given 12 turns to uncover character arrays of random words like 'science', 'python', and 'computer'.
+          </p>
+          
+          <!-- Terminal Widget -->
+          <div class="terminal-interactive">
+            <div class="terminal-interactive-header">
+              <span class="terminal-status" id="term-word-status">idle</span>
+              <span class="terminal-title">word_guess.py</span>
+            </div>
+            <div class="terminal-console-body" id="term-word-console">
+              <div class="terminal-comment"># Click "Run Game" above to launch terminal emulator.</div>
+            </div>
+            <div class="terminal-input-row">
+              <span class="terminal-input-prompt">&gt;</span>
+              <input type="text" id="term-word-input" class="terminal-input-field" disabled placeholder="Terminal waiting..." aria-label="Word game input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container contact-grid">
+      <!-- Contact Info Cards -->
+      <div class="contact-left" id="contact-left-card">
+        <span class="section-tag">// 05. REACH OUT</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="about-text">
+          Whether you want to talk about machine learning models, ask a question about my scripts, or collaborate on a project, feel free to send a message!
+        </p>
+        
+        <div class="contact-details">
+          <!-- Gmail -->
+          <div class="contact-method">
+            <div class="contact-method-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-method-info">
+              <h4>Gmail Address</h4>
+              <a href="mailto:jatin.coder123@gmail.com">jatin.coder123@gmail.com</a>
+            </div>
+          </div>
+          <!-- Instagram -->
+          <div class="contact-method">
+            <div class="contact-method-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="contact-method-info">
+              <h4>Instagram</h4>
+              <a href="https://www.instagram.com/jatin.dev123/" target="_blank" rel="noopener">@jatin.dev123</a>
+            </div>
+          </div>
+          <!-- GitHub -->
+          <div class="contact-method">
+            <div class="contact-method-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-method-info">
+              <h4>GitHub Profile</h4>
+              <a href="https://github.com/Jatin-Kumar-ai" target="_blank" rel="noopener">github.com/Jatin-Kumar-ai</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Message Form -->
+      <div class="contact-right-card" id="contact-right-card">
+        <form id="contact-form" class="contact-form">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" required class="form-control" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" required class="form-control" placeholder="Enter email">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" required class="form-control" placeholder="Write your message..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+            Send Message <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          
+          <div class="submit-success-msg" id="submit-msg">
+            <i class="fa-solid fa-circle-check"></i> Thank you! Your message was sent successfully. I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-text">
+        &copy; 2026 Jatin Kumar. Hand-coded from scratch.
+      </div>
+      <div class="footer-tech">
+        Built with HTML5 • CSS3 • Vanilla JS • ML Design System
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       RESUME POPUP MODAL
+       ======================================================================== -->
+  <div id="resume-modal-overlay" class="resume-modal-overlay" role="dialog" aria-modal="true" aria-label="Resume Viewer" aria-hidden="true">
+    <div class="resume-modal-container" id="resume-modal-container">
+      <!-- Modal Header -->
+      <div class="resume-modal-header">
+        <div class="resume-modal-title">
+          <i class="fa-solid fa-file-lines"></i>
+          <span>Resume — <span class="gradient-text">Jatin Kumar</span></span>
+        </div>
+        <button class="resume-modal-close" id="resume-modal-close" aria-label="Close resume modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <!-- Resume Image -->
+      <div class="resume-modal-body">
+        <img src="resume.jpg" alt="Jatin Kumar — Resume" class="resume-img" id="resume-img" />
+      </div>
+      <!-- Modal Footer -->
+      <div class="resume-modal-footer">
+        <a href="resume.jpg" download="Jatin_Kumar_Resume.jpg" class="btn btn-primary" id="resume-download-btn">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <span class="resume-footer-note">Click outside or press <kbd>Esc</kbd> to close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link Custom Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>
